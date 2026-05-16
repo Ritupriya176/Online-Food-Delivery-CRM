@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#2B22C7</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Manage orders, deliveries, menu items, and complaints</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Online Food Delivery CRM</label>
+    <navType>Standard</navType>
+    <tabs>Food_Orders__c</tabs>
+    <tabs>Menu_Item__c</tabs>
+    <tabs>Restaurant__c</tabs>
+    <tabs>Order_Line_Item__c</tabs>
+    <tabs>Complaint__c</tabs>
+    <tabs>Delivery__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Online_Food_Delivery_CRM_UtilityBar</utilityBar>
+</CustomApplication>

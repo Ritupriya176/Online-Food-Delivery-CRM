@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Order Line Items">
+        <template if:true={lineItems.length}>
+            <ul>
+                <template for:each={lineItems} for:item="item">
+                    <li key={item.Id}>
+                        {item.Menu_Item__r.Name} - Qty: {item.Quantity__c} - ₹{item.Total__c}
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template if:false={lineItems.length}>
+            <p>No line items found.</p>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Menu Items">
+        <template if:true={menuItems.length}>
+            <ul>
+                <template for:each={menuItems} for:item="menu">
+                    <li key={menu.Id}>
+                        {menu.Name} - ₹{menu.Price__c} ({menu.Category__c})
+                    </li>
+                </template>
+            </ul>
+        </template>
+        <template if:false={menuItems.length}>
+            <p>No menu items found.</p>
+        </template>
+    </lightning-card>
+</template>
